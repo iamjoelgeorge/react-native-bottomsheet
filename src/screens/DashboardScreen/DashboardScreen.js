@@ -2,6 +2,7 @@ import React, {useRef} from 'react';
 import {Button, Text, View} from 'react-native';
 
 import BottomSheet from 'react-native-raw-bottom-sheet';
+import BottomSheetContent from '../../components/BottomSheetContent/BottomSheetContent';
 
 import styles from './DashboardScreen.style';
 
@@ -27,7 +28,7 @@ const DashboardScreen = () => {
           container: styles.containerStyle,
           draggableIcon: styles.draggableIconStyle,
         }}>
-        <Text>hi</Text>
+        <BottomSheetContent ref={bottomSheetRef} />
       </BottomSheet>
     </View>
   );
